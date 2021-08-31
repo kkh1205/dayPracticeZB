@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3일차 학습내용</title>
+</head>
+
+<body>
+  <h1>3일차 학습내용</h1>
+
+  &nbsp;
+
+  <h3>
+    blockquote : 인용 <span style="color: rgb(255, 0, 0); font-size: 20px;">블록</span> 요소
+  </h3>
+  <p>
+    <b>왼쪽에 공백을 넣어준다.</b>
+  </p>
+
+  <blockquote>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis laboriosam debitis voluptas necessitatibus ratione
+      quod odio sint ducimus deserunt dolorum reprehenderit enim odit quae saepe ea, velit perspiciatis facere commodi!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, a voluptatibus quo nihil at modi sunt ratione quia
+      similique iste officiis vitae distinctio quaerat quod nemo nobis deleniti nisi excepturi?
+    </p>
+  </blockquote>
+
+  <!-- <p>
+    <b>blockquote 유의점</b>
+    <blockquote>
+      p태그 안에 blockquote태그를 넣으면 blockquote를 넣기 직전에 <b>p태그가 자동으로 닫혀버린다!</b> 그리고 뒤에 p태그를 닫아버리면 중복으로 닫는 코드가 들어간다. 그러므로 p태그 안에서는 q만 사용하도록 하자.
+    </blockquote>
+  </p> -->
+
+  <hr>
+
+  <h3>
+    q : <span style="color: rgb(255, 0, 0); font-size: 20px;">인라인</span> 인용문 요소
+  </h3>
+
+  <p>
+    <b>쌍따옴표를 붙여준다.</b>
+  </p>
+
+  <p>
+    <q>이건 나는게 아냐, 아주 멋있게 떨어지는 거지</q> - 토이스토리
+  </p>
+
+  <hr>
+
+  <h3>q ,blockquote 공통속성 <span style="color: rgb(255, 0, 0);">cite</span></h3>
+
+  <p>
+    인용문의 출처문서나 메세지를 가리키는 URL. <br>
+    인용문의 맥학 혹은 출처 정보를 가리킬 용도. <br>
+    속성이라 눈으로 보이지않는다. 브라우저만 알 수 있다.
+  </p>
+
+  <hr>
+
+  <h3> pre태그 </h3>
+
+  <pre style="font-size: 15px;">
+    preformated의 약자. 미리 형식이 정의되있음. 있는 그대로 표현하고 싶을 때 사용한다.
+    요소 내 공백문자를 그대로 유지하고, 고정폭 글꼴을 사용한다.(IIII : AAAA 둘다 폭이 같음.)
+    폰트도 좀 다르고 이걸로 코드를 적기도 편하다.
+  </pre>
+
+  <hr>
+
+  <h3>figure태그</h3>
+
+  <p>
+    독립적인 콘텐츠를 표현.
+    figcaption 요소를 사용해서 설명을 붙힘
+  </p>
+
+  <figure>
+    <img style="width: 40%;" src="/img/교토.jpg" alt="kyoto">
+    <figcaption>교토의 거리</figcaption>
+  </figure>
+
+  <figure style="border: 1px solid #000;">
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus veniam sit aut molestiae maiores dolorem,
+      rerum eligendi id, repudiandae, accusamus et? Amet veritatis inventore nostrum consequuntur temporibus eos
+      assumenda eum?
+    </p>
+    <figcaption>lorem을 쓰면 테스트용 텍스트가 나온다.</figcaption>
+  </figure>
+
+  <figure style="border: 1px solid #000;">
+    <figcaption>밑의 내용은 pre태그로 작성한 글입니다.</figcaption>
+    <pre>
+      pre태그 안에있는 내용은 하나의 이미지로 볼 수 있다.
+    </pre>
+  </figure>
+
+  <hr>
+
+  <h3>hr태그</h3>
+  <p>가로줄 표시할 때 씀. 계속 썼었어용.</p>
+
+  <hr>
+
+  <h3>abbr태그</h3>
+  <p>&#60;abbr&#62;는 약어(abbreviation)</p>
+  <p>
+    <abbr title="World Wide Web">WWW</abbr>
+    and
+    <abbr title="Hyper Text Markup Language">HTML</abbr>
+    근데 title은 전역속성이라 아무태그에나 쓸수있긴함.
+  </p>
+
+  <h3>address태그</h3>
+  <address>
+    address코드는 내용이 주소라는 의미를 담고있는거임. <a href="www.naver.com">www.naver.com</a> <br>
+    기울임꼴을 쓰기위해서 address태그를 쓰면 안됨!
+  </address>
+
+  <h3>cite태그 : 인용의 출처</h3>
+  <figure>
+    <blockquote>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ducimus perspiciatis odit rem sunt alias et at
+        eos quasi cum eum corrupti dolorum optio nulla molestiae ea, dolores ex esse.</p>
+    </blockquote>
+    <figcaption>
+      cite안에는 출처를 적음.
+      <cite>이곳은 cite태그 안이다. 출처를 적음.</cite> <br>
+      blockquote태그의 속성의 cite는 사용자에게는 보여지지않음.
+    </figcaption>
+  </figure>
+
+  <h3>bdo태그 : 택스트를 방향정함</h3>
+  <p>이글은 왼쪽에서 오른쪽으로 작성한다.</p>
+  <p><bdo dir="rtl">이 글은 오른쪽에서 왼쪽으로 작성한다.</bdo></p>
+
+  <hr>
+
+  <h2>텍스트 포메팅(시멘틱태그)</h2>
+
+  <h3>b태그, strong태그</h3>
+  <p>
+    공통 : 텍스트를 bold(굵은)체로 만들어줌.
+  </p>
+  <p>
+    요약키워드, 리뷰의 제품명 등, 특별한 중요성을 가지고 있지는 않고 <b>굵게만 표시 할 부분</b>에 <b>b태그</b>를 사용.
+  </p>
+
+  <p>
+    <strong>엄청 중요한 부분</strong>을 <strong>strong</strong>을 사용한다.
+  </p>
+
+  <p>스크린리더는 b태그보다 strong태그를 강조한다.</p>
+
+  <hr>
+
+  <h3>i, em태그</h3>
+
+  <p>공통 : 기울임꼴을 넣는다.</p>
+  <p>
+    <i>i태그는 구분해야 하는 부분</i>을 나타낸다. <br>
+    <em>em태그는 텍스트의 강조</em>부분을 나타낸다.
+  </p>
+
+  <hr>
+
+  <h3>mark태그</h3>
+
+  <p><mark>형광펜</mark></p>
+
+  <hr>
+
+  <h3>small태그</h3>
+
+  <p>덧붙힘 글 요소. 저작권, 법률표기 등을 <small>작은 글씨</small>로 적음.</p>
+
+  <hr>
+
+  <h3>sub, sup태그</h3>
+
+  <p>
+    sub : 아래첨자. <sub>아래</sub> <br>
+    sup : 위첨자. <sup>위</sup>
+  </p>
+
+  <hr>
+
+  <h3>del태그, ins태그</h3>
+
+  <p>
+    삭제는 del <del>del</del>, 넣는건 ins <ins>ins</ins> <br>
+    여기서 cite는 변경점의 리소스URL(옵션)
+  </p>
+
+  <h3>code태그</h3>
+
+  <p>
+    짧은 코드조각을 나타내는 태그. 예시 : <code>function()</code>
+    <br>긴 코드는 pre태그를 사용하는 편이 좋다.
+  </p>
+
+  <h3>kbd태그</h3>
+
+  <p>
+    keybord 버튼을 나타낼 때 쓰는 태그. <br>
+    예시 : <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd>
+  </p>
+
+  <hr>
+
+  <h3>a태그</h3>
+
+  <p>
+    a태그는 하이퍼링크를 만드는 태그. 사용빈도도 높고 굉장히 중요함. <br>
+    내용이 굉장히 많다.
+  </p>
+
+  <h4>속성1 : href(목적지)</h4>
+  <p>
+    <!-- 절대경로 -->
+    <a href="https://www.naver.com">네이버</a>
+    <br>
+    <!-- 상대경로 -->
+    <!-- <a href="">현재위치기준 이동 할 파일위치</a> -->
+
+    <!-- 이메일/전화 -->
+    <a href="mailto:dfg65r@naver.com">Send email</a>
+    <br>
+    <a href="tel:555-2365">555-2365</a>
+  </p>
+
+  <h4>속성2: target</h4>
+  <p>
+    목적지를 어디에 띄울건지 정해주는 속성. <br>
+    <ul>
+      <li>_self : 현재 탭에 링크를 연다(기본값)</li>
+      <li>_blank : 새 탭에 링크를 연다.</li>
+    </ul>
+  </p>
+  <p>
+    _blank속성 적용 : 
+    <a href="https://www.naver.com" target="_blank">네이버</a>
+  </p>
+
+  <hr>
+
+  <h3>엔티티(Entity)</h3>
+  <p>
+    HTML구문 자체의 일부(특수문자)들을 표현하고 싶을 때 사용하는 것이 엔티티.
+  </p>
+  <p>다섯개의 스페이싱(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)</p>
+  <pre>
+    &apos;문단&apos;을 나타내는 태그는 &quot;&lt;p&gt;&lt;/p&gt;&quot; 태그입니다.
+  </pre>
+
+  &nbsp;
+  <hr>
+  &nbsp;
+
+  <h2>구조를 나타내는 태그</h2>
+
+  <h3>div태그</h3>
+  <div style="background-color: cadetblue;">
+    플로우 콘텐츠를 위한 통용 컨테이너. 블럭 컨테이너<strong>순수 컨테이너로서 아무것도 표현하지 않는다.</strong>
+  </div>
+  <p>
+    문서의 특정 구역만 다른언어 속성을 넣기도 한다.
+  </p>
+
+  <h3>span태그</h3>
+  <span style="background-color: cornflowerblue;">
+    div랑 같이 <strong>순수한 컨테이너. 인라인 컨테이너</strong>
+  </span>
+
+  <hr>
+
+  <h3>시맨틱 웹</h3>
+  <p>
+    의미론적인 마크업. 검색엔진, 스크린리더가 읽기좋음. <br>
+    유지보수 시 생산성 측면에서 좋다.
+  </p>
+  <!-- 시맨틱 웹 -->
+  <header>
+    <!-- header -->
+    소개 및 탐색에 도움을 주는 콘텐츠. 제목,로고,검색폼,작성자이름
+    웹페이지 헤더는 하나만!
+  </header>
+  <nav>
+    <!-- 메뉴 -->
+  </nav>
+  <main>
+    <article>
+      <!-- 본문 -->
+
+    </article>
+    <aside>
+      <!-- 사이드바 -->
+    </aside>
+  </main>
+  <footer>
+    <!-- footer -->
+    정보나 아이콘, 저작권 문구 등 마지막에 적을 내용. <br>
+    footer안에 footer를 넣거나 할 수 없다.
+  </footer>
+
+  <hr>
+
+  <h3>nav 태그</h3>
+
+  <p>
+    문서의 부분 중 현재페이지 또는 다른페이지의 링크를 보여줌. <br>
+    목록 메뉴등 개요가 들어감.
+  </p>
+  <nav>
+    <ol>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
+    </ol>
+  </nav>
+
+  <hr>
+
+  <h3>aside태그</h3>
+  <p>
+    사이드바에 적는 내용들.
+    추가적인 정보를 넣는데 없어도 크게 문제가 없는거
+  </p>
+  <aside>
+    크게 중요하지 않은부분
+  </aside>
+  <p>
+    아무거나 적어
+  </p>
+
+  <hr>
+
+  <h3>main태그</h3>
+  <p>
+    현재 웹페이지를 아우르는 딱 하나의 메인컨텐츠. 많은 컨텐츠를 포함하고있다. <br>
+    무조건 main은 하나만 들어간다. <b>main은 인터넷 익스플로러에서 작동하지 않는다.</b>
+  </p>
+
+  <hr>
+
+  <h3>article태그</h3>
+  <p>
+    <strong>독립적으로 구분해 배포하거나 재사용 할 수 있는 구획.</strong> <br>
+    article안에 여러개의 section이 있을 수 있고, section 안에 여러개의 article이 있을 수 있다.
+  </p>
+  <p>
+    각각의 article을 식별할 수단. 주로 h태그(제목)를 article의 자식으로 포함하는 방법을 사용.
+  </p>
+
+  <h3>section태그</h3>
+  <p>
+    article을 사용 할 수 있다면 article을 사용하고(독립적으로 사용가능 할 때) <br>
+    그렇지 않을 경우 <strong>section을 사용한다.(독립적으로 사용 불가)</strong>
+  </p>
+  <p>
+    각각의 section을 식별할 수단. 주로 h태그(제목)를 section의 자식으로 포함하는 방법을 사용.
+  </p>
+  <p>
+    <strong>section을 일반 컨테이너로 사용금지.</strong> 특히 단순스타일링 목적일때 div태그 사용. <br>
+    논리적으로 구획이 나타나야 한다면 section태그사용.
+  </p>
+
+</body>
+
+</html>
