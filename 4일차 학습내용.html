@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4일차 학습내용</title>
+  <style>
+    p {
+      line-height: 25px;
+    }
+    .imgSet {
+      display: inline-block; width: 23em; overflow: auto;
+    }
+    .textSet {
+       display: inline-block; width: 23em; margin-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+
+    <header style="text-align: center;">
+      <h1>4일차 학습내용</h1>
+      <h2>chart.js로 만든 차트에 db 물리기(실패!)</h2>
+    </header>
+
+    <hr>
+
+    <section>
+      <h3>무엇이 문제였는가?</h3>
+
+      <p>
+        일단 node.js를 배운지 1년이 지났고(게을렀고) <b>js 기본기도 다져지지 않은 상황.</b><br>
+        거기다 SQL 개념도 희미해져가는 총체적 난국인 상황에 팀원 중 열정맨 한명이 엄청나게 진도를 빼버려<br>
+        급하게 만들어 볼려고 했던 것이 실패의 원인.(결국 내가 게을렀다. 자신에게 빡침)
+      </p>
+    </section>
+
+    <hr>
+
+    <section>
+      
+      <article>
+
+        <h3>node.js 설치 후 npm으로 필요한 모듈 설치</h3>
+
+        <di class="imgSet" style="display: inline-block;  width: 23em; overflow: auto;">
+          <img style="max-width: 100%;" src="/4일차학습내용img/npm.png" alt="module">
+        </di>
+        <div class="textSet">
+
+          <p>node.js 설치 후 생활코딩으로 기본개념 복습 후 npm으로 모듈 설치</p>
+
+        </div>
+        
+      </article>
+        
+      <article style="margin-top: 3em;">
+
+        <h3>하루종일 구글링해서 찾아낸 sql연결법</h3>
+        
+        <div class="imgSet">
+          <img style="max-width: 100%;" src="/4일차학습내용img/mysql.png" alt="dbconneting">
+        </div>
+        <div class="textSet">
+          <p>
+            require로 'mysql'을 불러와 변수 mysql에 저장.(아마 npm으로 받은 모듈에서 불러온게 아닐까 예상)
+          </p>
+          <p>
+            mysql모듈의 createConnection 함수와 connect함수를 작성.
+            <ul>
+              <li>host : 접속 주소를 나타낸다.</li>
+              <li>user : 유저 아이디.</li>
+              <li>password : 접속비밀번호.</li>
+              <li>database : 해당 호스트안에서의 DB를 선택.</li>
+            </ul>
+          </p>
+          <p>
+            connet 함수는 접속이 됐을때와 안됐을때의 동작을 정해주는 함수.
+          </p>
+        </div>
+
+      </article>
+
+      <article>
+
+        <div class="imgSet">
+          <img style="max-width: 100%;" src="/4일차학습내용img/mysql2.png" alt="connet2">
+        </div>
+
+        <div class="textSet">
+          <p>
+            query함수로 select하여 원하는 값을 불러와 dataarr변수에 배열로 저장한다. 확인차 console.log로 출력해봄.
+          </p>
+        </div>
+
+      </article>
+
+      <article>
+
+        <div class="imgSet">
+          <img style="max-width: 100%;" src="/4일차학습내용img/connect.png" alt="connect">
+        </div>
+
+        <p class="textSet">
+          node로 mysql.js를 호출하여 확인했다. 원하는 값이 출력되는 것을 확인. 그렇다면 지금 dataarr변수에는 db에서 가져온 값이 물려있는 것.
+        </p>
+
+      </article>
+
+    </section>
+
+    <hr>
+
+    <section>
+      <h3>하지만 문제는 지금부터 시작이었다.</h3>
+
+      <p>
+        기본기와 문법을 몰라 db값을 저장한 변수를 chart.js에 물리는 법을 수도없이 검색했지만 node.js로 설명해주는 곳은 없었고 (거의다 php만 쓰더라..) 결국 네카라쿠배 OT가 시작되는 7시 직전까지 검색만 죽어라 하다가 끝나버렸다.
+        <br>
+        이거 쓰고 빨리 운동을 가야하는데...
+      </p>
+    </section>
+
+    <hr>
+    &nbsp;
+    <footer>
+      <h3>결론</h3>
+      <ul>
+        <li>chart.js에 db를 node.js로 물리려 시도했었다.</li>
+        <li>쿼리를 날려 원하는 값을 배열로 얻어오는 것에는 성공.</li>
+        <li>하지만 그 이후 기본기가 딸려 차트데이터에 원하는 값을 넣지 못했다..</li>
+        <li style="font-size: large;">그렇지만 나는 할수있다!!!!!!!!!!</li>
+      </ul>
+    </footer>
+  </main>
+</body>
+</html>
