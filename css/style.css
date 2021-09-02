@@ -1,0 +1,23 @@
+p {
+  line-height: 25px;
+}
+
+.imgSet {
+  display: inline-block;
+  width: 23em;
+  overflow: auto;
+}
+
+.textSet {
+  display: inline-block;
+  width: 23em;
+  margin-left: 20px;
+}
+
+.imgWset {
+  max-width: 100%;
+}
+
+header {
+  text-align: center;
+}
